@@ -1,0 +1,62 @@
+// {"publish": true ,"date" : "2011-4-1" , "image" : "./images/blog1.png" ,  "title": "Creating a Custom API in Salesforce.com" , "subtitle" : "How to create a Custom Rest API in Salesforce.com", "description": "In Salesforce.com they call it the Apex API, is a way of writing a class in APEX (JAVA-LIKE) and exposing it as an REST API; By using Salesforce.com you get user management and the OAuth dance out of the box " , "tags" : ["development" , "salesforce"]}
+
+h3 Lets create an API that exposes Salesforce.com via HTTP
+h6.sub Authentication and other useful information can be found @ the end.
+
+p Salesforce offers a handful of API's. The Rest API , The Bulk API and the Legacy SOAP API; The custom APEX API is used in specific cases where a custom method needs to be exposed with out adhering to Standards.
+
+.alert 
+  h5 Standard REST API is available out of the box with every model you create in the Salesforce.com Platform.
+
+p Lets imagine we have an amazing Single Page App that your users love because they can approve several tasks in one click. You want to approve all those tasks at once in bulk via AJAX. How do you do that?
+
+
+h3 Look at a Class that was exposed as an API usign Tags(@)
+h6.sub Notice the Tags @RestResource and @HttpPost
+.label This code is a simple example, you probably want to do approach it differently;
+
+pre.prettyprint.
+
+  @RestResource(urlMapping='/Task/*')
+  global with sharing class Controller_Task {
+
+      @HttpPost
+      global static Response aproveTasks( List<Task> tasks ) {
+        for(Task task : tasks){
+          task.approved = true;
+        }
+        update ops;
+        return new response(true, String.valueOf(ops.size()) + ' tasks where approved!' );
+      } 
+  }
+
+h3 In order to make use of it:
+p Send an HTTP POST to "https://na7.salesforce.com/Task" with a JSON encoded array of Tasks
+ol
+  li The Salesforce Session Token must be present in the Request Headers { oauth: xyz }
+
+  li.sub na7.salesforce.com is the instance_url specific to your Salesforce.com Account. (Don't hardcode it thou)  
+
+h3 Is this it?
+p Almost. You can access this API from a Mobile Device or Server. But because of CORS limitations in Browsers we can't access any API directly.
+
+
+h3 What do we do?
+p  We centralize all API communications in a Ruby on Rails API HUB, that proxies , logs and controls communications to their destination.
+
+.alert.sub
+  strong This is the reason why we use Open Source!<br/>
+  span In order to avoiding Proprietary Lockdown we use a HUB so you could replace Salesforce.com or any other component with out affecting you Apps.
+
+
+p In 
+  a Openforce 
+  span we have already solved and developed all the integration libraries you need in order to connect Salesforce.com with NodeJS, Rails and many other Opensource projects.
+
+
+
+
+
+
+
+

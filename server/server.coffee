@@ -5,6 +5,10 @@ fs = require('fs')
 Routes = require("./routes")
 OpfDevUtil = require("./opfDevUtil")
 
+PostController = require("./postController")
+postController = new PostController()
+
+
 ##Setup Server
 app = express.createServer()
 app.use express.logger()

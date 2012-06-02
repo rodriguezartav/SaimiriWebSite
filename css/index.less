@@ -1,4 +1,5 @@
 @import "./bootstrap/bootstrap.less";
+@import "./bootstrap/responsive.less";
 @import "./fonts.less";
 
 .proxima{
@@ -92,13 +93,46 @@ article{
     border-top: 2px solid #efefef;
     border-bottom: 2px solid #efefef;
     background-color: #fff;
-    #gradient > .vertical(lighten(@gray,20),lighten(@gray,40));
+    #gradient > .vertical(lighten(@gray,40),lighten(@gray,90));
     color: #fff;
   }
 
+  &.rock{
+    background-image: url("/images/rock.gif");    
+  }
+
+  .blog{
+    .span3{
+      margin-bottom: 35px;
+      background-color: #fff;
+      border: 1px solid #eee;
+      .post{
+        padding: 10px;
+        img{
+          overflow: hidden;
+        }
+        h4{
+          font-family:"proxima-nova",sans-serif;
+          color: @green;
+          margin-top: 5px;
+          line-height: 10px;
+        }
+        h6{
+        }
+        p{
+          font-size: 12px;
+          font-family:"proxima-nova",sans-serif;
+          color: #333;
+          line-height: 11px;
+        }
+      }
+    }
+  }
   
   .iconed_grid{
-    >div{
+    width: 724px;
+    
+    .span6{
       height: 170px;
     }
   
@@ -131,8 +165,12 @@ article{
       padding: 5px;
       font-size: 13px;
     }
+   .footer{
+      text-align: center;
+      height: auto;
+   } 
+    
     
     }
   }
-  
 }

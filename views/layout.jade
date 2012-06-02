@@ -2,7 +2,7 @@
 html
   head
     meta(charset='utf-8')
-    title App
+    title Fundacion Saimiri
     link(rel='stylesheet', href='/application.css', type='text/css', charset='utf-8')
     script(src='/application.js', type='text/javascript', charset='utf-8')
     script(type='text/javascript', charset='utf-8')
@@ -10,7 +10,8 @@ html
       var exports = this;
       jQuery(function(){
       var App = require("index");
-      exports.app = new App({el: $("body")});
+      exports.app =  new App({ el: $("body") , dataPosts: !{JSON.stringify(posts)} });
+      
       });
   body
     != body

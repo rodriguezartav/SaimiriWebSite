@@ -1,3 +1,6 @@
+Post = require("../app/models/post")
+
+
 
 class Routes
 
@@ -7,8 +10,10 @@ class Routes
   setupRoutes: ->
    #ROUTES GO HERE
     @app.get "/", (req,res) ->
-      res.render "index" 
+      res.render "index" , {posts: Post.all() }
 
+    @app.get "/es", (req,res) ->
+      res.render "index_es"
 
 module.exports = Routes
    

@@ -1,0 +1,8 @@
+<div class="span3">
+  <div class="post">
+    <img src="<%= @image %>" />
+    <h4> <%= @title %></h4>
+    <h6> <%= @subtitle %> </h6>
+    <p <%= @description %> </p>
+  </div>
+</div>
