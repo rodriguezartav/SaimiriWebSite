@@ -1,4 +1,4 @@
-<div class="span3">
+<div data-id="<%= @id %>" class="span3 js_post_wrapper">
   <div class="post">
     <img src="<%= @image %>" />
     <h4> <%= @title %></h4>

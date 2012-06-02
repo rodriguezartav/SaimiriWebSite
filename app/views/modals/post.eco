@@ -1,0 +1,28 @@
+
+<div class="modal-header">
+  <h1> <%= @title %></h1>
+  <h6><%= @subtitle %></h6>
+
+</div>
+
+<div class="modal-body">
+  <div class="row-fluid">
+  <div class="span3">
+  dsd
+</div>
+    <div class="span9">
+      <img  src="<%= @image %>" />
+    
+      <%- @content %>
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer">
+<a class="btn btn-primary show_on_error js_close">Ok</a>
+</div>
+
+
+
+
+

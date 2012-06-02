@@ -9,7 +9,7 @@ class Posts extends Spine.Controller
     ".item"    : "item"
 
   events:
-    "click .js_select_post" : "onItemClick"
+    "click .post" : "onItemClick"
 
   constructor: ->
     super
@@ -19,5 +19,11 @@ class Posts extends Spine.Controller
     posts = Post.all()
     @log posts
     @html require("views/posts/item")( Post.all() )    
+    
+  onItemClick: (e) =>
+    target = $(e.target)
+    post = Post.find target.parents('.js_post_wrapper').attr "data-id"
+    Spine.trigger "show_modal", "post" , post: post
+    
      
 module.exports = Posts

@@ -9,6 +9,8 @@ require('spine/lib/manager')
 require('spine/lib/route')
 require('spine/lib/tmpl')
 
+require('./modal')
+require('./modalController')
 
 require('./bootstrap/bootstrap-dropdown')
 require('./bootstrap/bootstrap-tooltip')
