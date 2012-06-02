@@ -1,0 +1,120 @@
+article.container
+  header.hero-unit
+    h1 Great way to clip and read the web
+    p.intro
+      | Kippt makes it easy to save, search
+      | and read the information you find on the web.
+    p
+      a.btn.btn-green.btn-large(href='/signup') Sign up, it's free
+  section.row.features
+    h2 Manage your bookmarks and reading beautifully
+    p.intro Lightweight, fast and with features you actually use.
+    .span6
+      i.bookmarking
+      h3 Simpler and faster bookmarking
+      p
+        | Save and organize your links in to simple lists
+        | with notes and tags. Private or public.
+    .span6
+      i.search
+      h3 Search everything
+      p
+        | In Kippt, everything you collect is searchable from the title to the page content.
+    .span6
+      i.read
+      h3 Read your articles later
+      p
+        | Timeshift your reading for a better time. Read
+        | the articles easily on desktop and mobile.
+    .span6
+      i.collaborate
+      h3
+        | Collaborate and share
+        span.label.label-warning Coming soon
+      p
+        | Collect bookmarks and clips with your collegues. Curate and share the best you find on the web.
+    .follow-buttons
+      div(style='vertical-align: bottom; margin: 0 20px 0 80px;')
+        iframe.twitter-share-button.twitter-count-horizontal(allowtransparency='true', frameborder='0', scrolling='no', src='https://platform.twitter.com/widgets/tweet_button.1337330192.html#_=1338587583090&count=horizontal&id=twitter-widget-0&lang=en&original_referer=https%3A%2F%2Fkippt.com%2F&related=kippt&size=m&text=Great%20way%20to%20bookmark%20and%20read%20the%20web&url=http%3A%2F%2Fkippt.com&via=kippt', style='width: 107px; height: 20px;', title='Twitter Tweet Button')
+        script
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      div(style='vertical-align: middle;')
+        .fb-like(data-href='http://facebook.com/kipptapp', data-send='false', data-layout='button_count', data-width='120', data-show-faces='false')
+      div(style='vertical-align: bottom;')
+        g:plusone(size='medium', annotation='inline', width='120', href='http://kippt.com')
+  hr
+  script(type='text/javascript', charset='utf-8')
+    $(function () {
+    var tabContainers = $('section.screenshots .tab');
+    tabContainers.hide().filter(':first').show();
+    $('section.screenshots ul.tabs a').click(function () {
+    tabContainers.hide();
+    tabContainers.filter(this.hash).fadeIn(400);
+    $('section.screenshots ul.tabs a').removeClass('selected');
+    $(this).addClass('selected');
+    return false;
+    }).filter(':first').click();
+    });
+  section.row.screenshots
+    div
+      #first.tab(style='display: block;')
+        h4 Keep it simple with lists
+        img(src='/static/img/home-screen-overview.png', alt='')
+      #second.tab(style='display: none;')
+        h4 Read interesting articles later. Also with mobile.
+        img(src='/static/img/home-screen-readlater.png', alt='')
+      #third.tab(style='display: none;')
+        h4 Search from page content, title and urls. Forget tedious tagging.
+        img(src='/static/img/home-screen-search.png', alt='')
+      #fourth.tab(style='display: none;')
+        h4 Import your bookmarks to Kippt.
+        img(src='/static/img/home-screen-import.png', alt='')
+      .shadow
+    ul.tabs
+      li
+        a.selected(href='#first') Overview
+      li
+        a(href='#second')
+          | Read
+          span  Later
+      li
+        a(href='#third') Search
+      li
+        a(href='#fourth') Import
+  hr
+  section.row.testimonials
+    .span4
+      blockquote
+        span Kippt: a bookmarking app to watch
+        a(href='http://www.readwriteweb.com/archives/kippt_a_bookmarking_app_to_watch.php')
+          img(src='/static/img/readwriteweb.png', alt='ReadWriteWeb')
+    .span4
+      blockquote
+        span
+          | Kippt offers easy bookmarking, sharing and reading tools in one beautiful free app.
+        a.appstorm(href='http://web.appstorm.net/reviews/data-management/get-the-most-out-of-your-bookmarks-with-kippt/#more-26916') Appstorm
+    .span4
+      blockquote
+        span
+          | Loving @kippt bookmark organizer! Simple, beautiful and easy to use. What else is needed?
+        a(href='https://twitter.com/#!/nikosalonen/status/173766465781104640') @nikosalonen
+  hr
+  section.row.beawesome
+    h2 Be organized. Use Kippt.
+    a.btn.btn-green.btn-large(href='/signup') Sign up, it's free
+    section
+      footer
+        p
+          a(href='/about') About us
+          | ·
+          a(href='mailto:hello@kippt.com') Contact
+          | ·
+          a(href='http://blog.kippt.com', target='_blank') Blog
+        p © 2011-2012 Kippt. Designed and developed in Helsinki, Finland.
+        .follow-buttons
+          div(style='vertical-align: middle; margin-right: 20px;')
+            iframe.twitter-follow-button(allowtransparency='true', frameborder='0', scrolling='no', src='https://platform.twitter.com/widgets/follow_button.1337330192.html#_=1338587583093&id=twitter-widget-2&lang=en&screen_name=kippt&show_count=false&show_screen_name=true&size=m', style='width: 99px; height: 20px;', title='Twitter Follow Button')
+            script
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+          div(style='vertical-align: bottom;')
+            .fb-like(data-href='http://facebook.com/kipptapp', data-send='false', data-width='100', data-show-faces='false', data-layout='button_count')
