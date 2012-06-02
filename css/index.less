@@ -7,9 +7,21 @@
 }
 
 body{
-  background-image: url("/images/arches.png");    
+  background-image: url("/images/arches.png"); 
 }
 
+.modal {
+  top: 40%;
+}
+.modal-header {
+  .buttonBackground(@btnBackground, @btnBackgroundHighlight);
+  .close{
+    position: absolute;
+    right: 6px;
+    top: -1px;
+  }
+  
+}
 .navbar{
   margin-bottom: 0px;
   .navbar-inner{

@@ -1,6 +1,6 @@
 nav.navbar
   .navbar-inner
-    .container.fixed
+    .container
       a.brand(href='/')
         img(src='/images/logo.png', alt='Fundacion Saimiri')
       .nav-collapse
@@ -21,11 +21,11 @@ article.container.splash
       <br/>
       h2 It's getting hard to protect Osa Peninsula
       .btn-group
-        a.btn.btn-green.btn-large.btn-success(href='/signup') 
-          i.icon-camera-retro.icon-large  Visit Soon
+        a.btn.btn-green.btn-large.btn-success
+          i.icon-camera-retro.icon-large(data-event="true",data-event-template="visitOsa")  Visit Soon
          
-        a.btn.btn-green.btn-large.btn-warning(href='/signup')
-          i.icon-heart-empty.icon-large  Join our efforts
+        a.btn.btn-green.btn-large.btn-warning
+          i.icon-heart-empty.icon-large(data-event="true",data-event-template="helpOsa")   Join our efforts
 
 
 article.white
@@ -40,13 +40,13 @@ article.white
         h3.proxima
           i.icon-search  Scientific Research        
         p.proxima Stay at SaimiriStation and join our Primate Research or conduct your own research with our support.
-        h4.btn.btn-success Room & Board starting @ $40/night
+        h4.btn.btn-success(data-event="true",data-event-template="research") Room & Board starting @ $40/night
 
       .span6
         h3.proxima
           i.icon-leaf  Habitat Restoration
         p.proxima Help a Endemic Endangered Species by Supporting or Working in Primate Reforestation Programs
-        h4.btn.btn-success Recover a Squirel Monkey's habitat for $15/month
+        h4.btn.btn-success(data-event="true",data-event-template="habitat") Recover a Squirel Monkey's habitat for $15/month
 
     section.row-fluid
 
@@ -54,19 +54,20 @@ article.white
         h3.proxima 
           i.icon-picture  Enviromental Education
         p.proxima Volunteer helping local kids understand wildlife conservation, teach english and internet
-        h4.btn.btn-success Volunteering Oportunities for $900/month
+        h4.btn.btn-success(data-event="true",data-event-template="enviromental") Volunteering Oportunities for $900/month
 
 
       .span6
         h3.proxima 
           i.icon-plane  Rural Eco-Tourism
         p.proxima Visit Corcovado NP and surroundings with a certified Biologist and experience the Real Osa Peninsula.
-        h4.btn.btn-success Visit Corcovado National Park for $1000/person
+        h4.btn.btn-success(data-event="true",data-event-template="rural") Visit Corcovado National Park for $1000/person
 
 
       .footer.span12
         h5 We are a self-sustaniable non-profit organization
-        a.btn.btn-large.btn-warning We take Donations via Paypal
+        a.btn.btn-large.btn-warning(data-event="true",data-event-template="research") We take Donations via Paypal
+        h6 Even $1 makes a difference
 
 
 article.rock
@@ -74,7 +75,6 @@ article.rock
     section.row.blog
       h1.proxima What we are working on
       h6 Latest posts from our blog
-      
       .row.posts
       
     

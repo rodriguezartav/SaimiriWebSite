@@ -24,7 +24,7 @@ Spine.Controller.ModalController =
           Spine.lightboxDiv.empty()
           Spine.lightboxDiv.hide()
 
-        Spine.lightboxDiv = $('<div class="lightbox reveal-modal-bg"></div>')
+        Spine.lightboxDiv = $('<div class="lightbox  reveal-modal-bg"></div>')
         $("body").append Spine.lightboxDiv
 
       

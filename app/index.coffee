@@ -6,6 +6,7 @@ Post = require("models/post")
 Posts = require("controllers/posts")
 
 PostModal = require("controllers/modals/post")
+InfoModal = require("controllers/modals/info")
 
 
 class App extends Spine.Controller
@@ -22,6 +23,8 @@ class App extends Spine.Controller
     @setupModal()
     
     #html require("views/layout")
+
+    
 
 module.exports = App
     
