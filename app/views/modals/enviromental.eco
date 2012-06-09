@@ -1,26 +1,33 @@
 
 <div class="modal-header">
-  <h2>Interested in Envirometal Education?</h2>
-  <h6>Experience Live at its extreme</h6>
+  <h2>Teaching Love & Nature </h2>
  <button type="button" class="close js_close">×</button>
 </div>
 
 <div class="modal-body">
-  <div class="row-fluid">
-  <div class="span3">
-  dsd
-</div>
-    <div class="span9">
-      <img  src="<%= @image %>" />
-    
-      <%- @content %>
-    </div>
+  <div class="alert alert-info">
+    <h4>Environmental Education is the only realistic act of conservation</h4>
+    <p>We can't pay tress to grow, we can't pay hunters to stop; <br/>The only thing we can do, is teach our kids this love for nature</p>
   </div>
+
+  <div class="row-fluid">
+    <div class="span6">
+      <h3>Enviromental Education is our purpose in life</h3>
+    </div>
+    
+    <div class="span6">
+      <p class="alert">For most it suffices with a one time workshop or even a book. </p>  
+    </div>
+    
+  </div>
+  
+  
+  <h3>Volunteer to Change the World</h3>
+  
+  
 </div>
 
-<div class="modal-footer">
-<a class="btn btn-success js_btn_next">Next</a>
-</div>
+
 
 
 

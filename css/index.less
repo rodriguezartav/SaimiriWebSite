@@ -12,16 +12,41 @@ body{
 
 .modal {
   top: 45%;
-}
-.modal-header {
-  .buttonBackground(@btnBackground, @btnBackgroundHighlight);
-  .close{
-    position: absolute;
-    right: 6px;
-    top: -1px;
-  }
+
+  .modal-header {
+    &.tech{
+      .buttonBackground(@btnBackground, @btnBackgroundHighlight);
+      h6{
+        color: #333;
+      }
+    }
   
+    .close{
+      position: absolute;
+      right: 6px;
+      top: -1px;
+    }
+  
+  }
+
+
+  .nature{
+    h6{
+      color: @green;
+    }
+
+    .eco-pills{
+      li{
+        a{
+        }
+      }
+      margin-bottom: 8px;
+    }
+
+  }
 }
+
+
 .navbar{
   margin-bottom: 0px;
   .navbar-inner{

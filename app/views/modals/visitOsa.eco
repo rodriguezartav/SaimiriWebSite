@@ -1,26 +1,33 @@
 
 <div class="modal-header">
-  <h2>Visit Osa Peninsula</h2>
-  <h6>Experience Live at its extreme</h6>
+  <h2>Visit Osa Peninsula Soon!</h2>
  <button type="button" class="close js_close">×</button>
 </div>
 
 <div class="modal-body">
-  <div class="row-fluid">
-  <div class="span3">
-  dsd
-</div>
-    <div class="span9">
-      <img  src="<%= @image %>" />
-    
-      <%- @content %>
-    </div>
+  <h3>3% of worlds biodiversity</h3>
+  <p>Including Jaguars, Whales, Monkeys, Maccaws and hundreds of amazing species.</p>
+  
+  <div class="alert alert-success">
+  <h4>We'll help you Plan your Trip</h4>
+  <h5>and make sure your vacation is a success while you are here</h5>
+  
+  <input placeholder="Name"/>  
+  <input placeholder="Email Address" />
+  <p>Fill the following information to start the personalized process!</p>
+  
   </div>
+    <h3>Experience year-round beauty and abundant wildlife</h3>
+    <p>What you can experience in the Osa Peninsula you won't anywhere else, along with an unique Rural setting with intact traditional culture hard to find in tourist Costa Rica.</p>
+  
+  <img src="/images/gulfView.png"/>
+  <h6>A Magical View of Golfo Dulce. Osa Peninsula has it all the most breath taking views, pristine white sand beaches and the greatest amount of animals you probably will see in the wild.</h6>
+  
+  
+  
 </div>
 
-<div class="modal-footer">
-<a class="btn btn-success js_btn_next">Next</a>
-</div>
+
 
 
 

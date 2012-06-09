@@ -1,26 +1,28 @@
 
 <div class="modal-header">
-  <h2>Are you a Scientist?</h2>
-  <h6>Experience Live at its extreme</h6>
+  <h2>Research Wildlife in Osa Peninsula</h2>
  <button type="button" class="close js_close">×</button>
 </div>
 
 <div class="modal-body">
+  
   <div class="row-fluid">
-  <div class="span3">
-  dsd
-</div>
-    <div class="span9">
-      <img  src="<%= @image %>" />
-    
-      <%- @content %>
+  
+    <div class="span6">
+      <h3>Looking for field experience</h3>
+      <h5 class="alert alert-success">Join Daniela Solano at a Primate Field Research Program</h5>
     </div>
+  
+    <div class="span6">
+      <h3>Are you a Scientist?</h3>
+      <h5 class="alert alert-info">Do field research at our facilities located 4KM into Corcovado NP </h5>
   </div>
+  
+  <p>Whether you are a student, biologist or naturalist; Wildlife Management Msc. Daniela Solano will personally coordinate you scientific project by sharing her connections , experience and academic resources from more that 7 years of Research @ Osa </p>
+  
 </div>
 
-<div class="modal-footer">
-<a class="btn btn-success js_btn_next">Next</a>
-</div>
+
 
 
 

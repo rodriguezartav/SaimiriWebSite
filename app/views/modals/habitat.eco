@@ -1,26 +1,30 @@
 
 <div class="modal-header">
-  <h2>Let's Help the Primates!</h2>
-  <h6>Experience Live at its extreme</h6>
- <button type="button" class="close js_close">×</button>
+  <h2>Are you a Hands on Person?</h2>
+  <button type="button" class="close js_close">×</button>
 </div>
 
 <div class="modal-body">
-  <div class="row-fluid">
-  <div class="span3">
-  dsd
-</div>
-    <div class="span9">
-      <img  src="<%= @image %>" />
-    
-      <%- @content %>
-    </div>
+  <h3>Conservation = Habitat Restoration</h3>
+  <h5>Looking for an amazing experience that involves wildlife and rural communities; and at the same time work on something meaningful! </h5>
+  
+  <div class="alert alert-success">
+    <h4>Fundacion Saimiri Habitat Restortion Programas</h4>
+    <h5>Wilflife and Squirel Monkeys have seen their habitat being destroyed for decades; Recently the work of conservationists have reclaimed hundread of hectares from cattleing and farming but...;
+
+  <h3>Habitat Restoration does not happend on its own </h3>
   </div>
+  
+
+  <h4>Join Saimiri on amazing field activities like primary forest seed collecting, Tree Nursing, </h4>
+  <p>Your presence is the first form of habitat resotarion, because local people will see how habit resoration is more profitable that deforestation. Furhur more you will take part of the most beautifil conservation task of all</p>
+  
+  <h3>!Help mother nature grow</h3>
+  
+  
 </div>
 
-<div class="modal-footer">
-<a class="btn btn-success js_btn_next">Next</a>
-</div>
+
 
 
 

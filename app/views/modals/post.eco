@@ -1,5 +1,5 @@
 
-<div class="modal-header">
+<div class="modal-header tech">
   <h2> <%= @title %></h2>
   <h6><%= @subtitle %></h6>
  <button type="button" class="close js_close">×</button>
