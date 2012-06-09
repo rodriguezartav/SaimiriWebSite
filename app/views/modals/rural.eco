@@ -1,4 +1,3 @@
-
 <div class="modal-header">
   <h2>Looking for an Amazing Trip</h2>
   <h6>Experience Live at its extreme</h6>
@@ -6,10 +5,15 @@
 </div>
 
 <div class="modal-body">
-  <div class="row-fluid">
-  <div class="span3">
+We promote 100% locally run initiatives. 
+
+<div class="row-fluid">
+Our small comunity depends on farming and ranching. Everyday we are working on ways to involve and promote those entreprenuers that are doing a step futher. 
+
+<div class="span3">
   dsd
 </div>
+We will help you reach them. You would have so moche fun that you will forget you are also helping nature.
     <div class="span9">
       <img  src="<%= @image %>" />
     
