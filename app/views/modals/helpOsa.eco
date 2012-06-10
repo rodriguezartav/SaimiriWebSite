@@ -1,6 +1,5 @@
-
 <div class="modal-header nature">
-  <h3>The Osa Peninsula is a Magical Place worth protecting</h3>
+  <h3>The Osa Peninsula is an astonishing place worth protecting</h3>
   <h6>Threats to Osa Peninsula wildlife and unique ecosystems</h6>
  <button type="button" class="close js_close">×</button>
 </div>
@@ -8,18 +7,19 @@
 <div class="modal-body nature">
   <ul class="nav eco-pills">
     <li><a >Non Ecological Tourism</a></li>
-    <li><a>Palm Tree Farming</a></li>
-    <li><a>Hunting</a></li>    
-    <li><a>Tree Lodging</a></li>
+    <li><a>Oil Palm Plantations</a></li>
+    <li><a>Poaching</a></li>    
+    <li><a>Illegal Logging</a></li>
     <li><a>Unplanned Development</a></li>
     <li><a>Gold Digging</a></li>
     <li><a>Poverty</a></li>
+    <li><a>Lack of Management of Timberwood plantations</a></li>
     <li><a>Genetic Degradation</a></li>
   </ul>
   
     <h4>We've been dedicating our lives towards its conservation</h4>
     <h3>Now you can help put too!</h3>
-    <p>With Saimiri Foundation you can Work Hands or Fund our Projects in different ways</p>
+    <p>With Saimiri Foundation you can help in different ways, not only handos on or funding projects</p>
   
 
     <div class="login-social">
@@ -27,7 +27,7 @@
 
     					<a href="#" class="btn">Facebook</a>				
     			</div>
-      <h6>Tell the world (and us) you wan't to help out and we'll get in touch</h6>
+      <h6>Tell the world (and us) you want to help out and we'll get in touch</h6>
 
 </div>
 
