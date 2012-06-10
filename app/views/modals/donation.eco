@@ -1,5 +1,6 @@
 <div class="modal-header">
-  <h2>We take Donations. It can be your time and experience as well as funds from $1 and up</h2>
+  <h2>You can help us achieve our mission.
+We take Donations. It can be your time and experience as well as funds from $1 and up</h2>
   <h6>Experience Live at its extreme</h6>
  <button type="button" class="close js_close">×</button>
 </div>
@@ -9,7 +10,7 @@ Whith $1 we can buy a couple of biodegradable bags to put our seeds on.
   <div class="span3">
   dsd
 </div>
-Witj your time, you can change one child´s life and way to understand nature    
+With your time, you can change one child´s life and also one community´s way to understand nature    
 <div class="span9">
       <img  src="<%= @image %>" />
     
